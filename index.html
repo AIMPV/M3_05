@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="card">
+        <div class="card-header">
+          <h5>Todo List</h5>
+        </div>
+        <div class="card-body">
+          <div class="card-text">
+            <div class="d-flex flex-column">
+              <label class="fw-bold mb-1">Nueva tarea</label>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" id="newTask" placeholder="Ingresa el nombre de la tarea" aria-label="Ingresa el nombre de la tarea" aria-describedby="addTask">
+                <button class="btn btn-primary" type="button" id="addTaskBtn">Agregar tarea</button>
+              </div>
+            </div>
+            <div class="d-flex flex-column mb-3">
+              <ul class="p-0 m-0 list-style-none">
+                <li>
+                  <div class="fw-bold">ID</div>
+                  <div class="fw-bold">Nombre</div>
+                  <div class="fw-bold"></div>
+                </li>
+              </ul>
+              <ul id="taskList" class="p-0 m-0 list-style-none"></ul>
+            </div>
+            <div class="row">
+              <div class="col-auto">
+                <span>Total</span>
+                <span class="fw-bold" id="total"></span>
+              </div>
+              <div class="col-auto">
+                <span>Realizadas</span>
+                <span class="fw-bold" id="done"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/f5bdbb41e0.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>
